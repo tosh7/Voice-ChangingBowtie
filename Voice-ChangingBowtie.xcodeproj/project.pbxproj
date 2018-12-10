@@ -14,6 +14,7 @@
 		2B73E03021BEBD380065563C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */; };
 		2B73E03B21BEBD390065563C /* Voice_ChangingBowtieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E03A21BEBD390065563C /* Voice_ChangingBowtieTests.swift */; };
 		2B73E04621BEBD390065563C /* Voice_ChangingBowtieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E04521BEBD390065563C /* Voice_ChangingBowtieUITests.swift */; };
+		2B73E05721BEC4590065563C /* AudioChageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E05621BEC4590065563C /* AudioChageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2B73E04121BEBD390065563C /* Voice-ChangingBowtieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice-ChangingBowtieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B73E04521BEBD390065563C /* Voice_ChangingBowtieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_ChangingBowtieUITests.swift; sourceTree = "<group>"; };
 		2B73E04721BEBD390065563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73E05621BEC4590065563C /* AudioChageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,11 @@
 		2B73E02421BEBD360065563C /* Voice-ChangingBowtie */ = {
 			isa = PBXGroup;
 			children = (
+				2B73E05521BEBE2F0065563C /* ViewController */,
+				2B73E05421BEBE270065563C /* Model */,
+				2B73E05321BEBE190065563C /* View */,
 				2B73E02521BEBD360065563C /* AppDelegate.swift */,
-				2B73E02721BEBD360065563C /* ViewController.swift */,
-				2B73E02921BEBD360065563C /* Main.storyboard */,
 				2B73E02C21BEBD380065563C /* Assets.xcassets */,
-				2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */,
 				2B73E03121BEBD380065563C /* Info.plist */,
 			);
 			path = "Voice-ChangingBowtie";
@@ -123,6 +125,31 @@
 				2B73E04721BEBD390065563C /* Info.plist */,
 			);
 			path = "Voice-ChangingBowtieUITests";
+			sourceTree = "<group>";
+		};
+		2B73E05321BEBE190065563C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E02921BEBD360065563C /* Main.storyboard */,
+				2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B73E05421BEBE270065563C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E05621BEC4590065563C /* AudioChageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B73E05521BEBE2F0065563C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E02721BEBD360065563C /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B73E02821BEBD360065563C /* ViewController.swift in Sources */,
+				2B73E05721BEC4590065563C /* AudioChageModel.swift in Sources */,
 				2B73E02621BEBD360065563C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
 				INFOPLIST_FILE = "Voice-ChangingBowtie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
 				INFOPLIST_FILE = "Voice-ChangingBowtie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
