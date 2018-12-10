@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B73E02621BEBD360065563C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E02521BEBD360065563C /* AppDelegate.swift */; };
+		2B73E02821BEBD360065563C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E02721BEBD360065563C /* ViewController.swift */; };
+		2B73E02B21BEBD360065563C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73E02921BEBD360065563C /* Main.storyboard */; };
+		2B73E02D21BEBD380065563C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B73E02C21BEBD380065563C /* Assets.xcassets */; };
+		2B73E03021BEBD380065563C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */; };
+		2B73E03B21BEBD390065563C /* Voice_ChangingBowtieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E03A21BEBD390065563C /* Voice_ChangingBowtieTests.swift */; };
+		2B73E04621BEBD390065563C /* Voice_ChangingBowtieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E04521BEBD390065563C /* Voice_ChangingBowtieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B73E03721BEBD390065563C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B73E01A21BEBD360065563C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B73E02121BEBD360065563C;
+			remoteInfo = "Voice-ChangingBowtie";
+		};
+		2B73E04221BEBD390065563C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B73E01A21BEBD360065563C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B73E02121BEBD360065563C;
+			remoteInfo = "Voice-ChangingBowtie";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B73E02221BEBD360065563C /* Voice-ChangingBowtie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice-ChangingBowtie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73E02521BEBD360065563C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B73E02721BEBD360065563C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B73E02A21BEBD360065563C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B73E02C21BEBD380065563C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B73E02F21BEBD380065563C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B73E03121BEBD380065563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73E03621BEBD390065563C /* Voice-ChangingBowtieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice-ChangingBowtieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73E03A21BEBD390065563C /* Voice_ChangingBowtieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_ChangingBowtieTests.swift; sourceTree = "<group>"; };
+		2B73E03C21BEBD390065563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73E04121BEBD390065563C /* Voice-ChangingBowtieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice-ChangingBowtieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73E04521BEBD390065563C /* Voice_ChangingBowtieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_ChangingBowtieUITests.swift; sourceTree = "<group>"; };
+		2B73E04721BEBD390065563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B73E01F21BEBD360065563C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03321BEBD390065563C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03E21BEBD390065563C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B73E01921BEBD360065563C = {
+			isa = PBXGroup;
+			children = (
+				2B73E02421BEBD360065563C /* Voice-ChangingBowtie */,
+				2B73E03921BEBD390065563C /* Voice-ChangingBowtieTests */,
+				2B73E04421BEBD390065563C /* Voice-ChangingBowtieUITests */,
+				2B73E02321BEBD360065563C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B73E02321BEBD360065563C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E02221BEBD360065563C /* Voice-ChangingBowtie.app */,
+				2B73E03621BEBD390065563C /* Voice-ChangingBowtieTests.xctest */,
+				2B73E04121BEBD390065563C /* Voice-ChangingBowtieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B73E02421BEBD360065563C /* Voice-ChangingBowtie */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E02521BEBD360065563C /* AppDelegate.swift */,
+				2B73E02721BEBD360065563C /* ViewController.swift */,
+				2B73E02921BEBD360065563C /* Main.storyboard */,
+				2B73E02C21BEBD380065563C /* Assets.xcassets */,
+				2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */,
+				2B73E03121BEBD380065563C /* Info.plist */,
+			);
+			path = "Voice-ChangingBowtie";
+			sourceTree = "<group>";
+		};
+		2B73E03921BEBD390065563C /* Voice-ChangingBowtieTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E03A21BEBD390065563C /* Voice_ChangingBowtieTests.swift */,
+				2B73E03C21BEBD390065563C /* Info.plist */,
+			);
+			path = "Voice-ChangingBowtieTests";
+			sourceTree = "<group>";
+		};
+		2B73E04421BEBD390065563C /* Voice-ChangingBowtieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B73E04521BEBD390065563C /* Voice_ChangingBowtieUITests.swift */,
+				2B73E04721BEBD390065563C /* Info.plist */,
+			);
+			path = "Voice-ChangingBowtieUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B73E02121BEBD360065563C /* Voice-ChangingBowtie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73E04A21BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtie" */;
+			buildPhases = (
+				2B73E01E21BEBD360065563C /* Sources */,
+				2B73E01F21BEBD360065563C /* Frameworks */,
+				2B73E02021BEBD360065563C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voice-ChangingBowtie";
+			productName = "Voice-ChangingBowtie";
+			productReference = 2B73E02221BEBD360065563C /* Voice-ChangingBowtie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B73E03521BEBD390065563C /* Voice-ChangingBowtieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73E04D21BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtieTests" */;
+			buildPhases = (
+				2B73E03221BEBD390065563C /* Sources */,
+				2B73E03321BEBD390065563C /* Frameworks */,
+				2B73E03421BEBD390065563C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B73E03821BEBD390065563C /* PBXTargetDependency */,
+			);
+			name = "Voice-ChangingBowtieTests";
+			productName = "Voice-ChangingBowtieTests";
+			productReference = 2B73E03621BEBD390065563C /* Voice-ChangingBowtieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B73E04021BEBD390065563C /* Voice-ChangingBowtieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73E05021BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtieUITests" */;
+			buildPhases = (
+				2B73E03D21BEBD390065563C /* Sources */,
+				2B73E03E21BEBD390065563C /* Frameworks */,
+				2B73E03F21BEBD390065563C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B73E04321BEBD390065563C /* PBXTargetDependency */,
+			);
+			name = "Voice-ChangingBowtieUITests";
+			productName = "Voice-ChangingBowtieUITests";
+			productReference = 2B73E04121BEBD390065563C /* Voice-ChangingBowtieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B73E01A21BEBD360065563C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Satoshi Komatsu";
+				TargetAttributes = {
+					2B73E02121BEBD360065563C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2B73E03521BEBD390065563C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2B73E02121BEBD360065563C;
+					};
+					2B73E04021BEBD390065563C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2B73E02121BEBD360065563C;
+					};
+				};
+			};
+			buildConfigurationList = 2B73E01D21BEBD360065563C /* Build configuration list for PBXProject "Voice-ChangingBowtie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B73E01921BEBD360065563C;
+			productRefGroup = 2B73E02321BEBD360065563C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B73E02121BEBD360065563C /* Voice-ChangingBowtie */,
+				2B73E03521BEBD390065563C /* Voice-ChangingBowtieTests */,
+				2B73E04021BEBD390065563C /* Voice-ChangingBowtieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B73E02021BEBD360065563C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73E03021BEBD380065563C /* LaunchScreen.storyboard in Resources */,
+				2B73E02D21BEBD380065563C /* Assets.xcassets in Resources */,
+				2B73E02B21BEBD360065563C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03421BEBD390065563C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03F21BEBD390065563C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B73E01E21BEBD360065563C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73E02821BEBD360065563C /* ViewController.swift in Sources */,
+				2B73E02621BEBD360065563C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03221BEBD390065563C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73E03B21BEBD390065563C /* Voice_ChangingBowtieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73E03D21BEBD390065563C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73E04621BEBD390065563C /* Voice_ChangingBowtieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B73E03821BEBD390065563C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B73E02121BEBD360065563C /* Voice-ChangingBowtie */;
+			targetProxy = 2B73E03721BEBD390065563C /* PBXContainerItemProxy */;
+		};
+		2B73E04321BEBD390065563C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B73E02121BEBD360065563C /* Voice-ChangingBowtie */;
+			targetProxy = 2B73E04221BEBD390065563C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B73E02921BEBD360065563C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B73E02A21BEBD360065563C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B73E02E21BEBD380065563C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B73E02F21BEBD380065563C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B73E04821BEBD390065563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B73E04921BEBD390065563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B73E04B21BEBD390065563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B73E04C21BEBD390065563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B73E04E21BEBD390065563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice-ChangingBowtie.app/Voice-ChangingBowtie";
+			};
+			name = Debug;
+		};
+		2B73E04F21BEBD390065563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice-ChangingBowtie.app/Voice-ChangingBowtie";
+			};
+			name = Release;
+		};
+		2B73E05121BEBD390065563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice-ChangingBowtie";
+			};
+			name = Debug;
+		};
+		2B73E05221BEBD390065563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Voice-ChangingBowtieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tosh7.Voice-ChangingBowtieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice-ChangingBowtie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B73E01D21BEBD360065563C /* Build configuration list for PBXProject "Voice-ChangingBowtie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73E04821BEBD390065563C /* Debug */,
+				2B73E04921BEBD390065563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73E04A21BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73E04B21BEBD390065563C /* Debug */,
+				2B73E04C21BEBD390065563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73E04D21BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73E04E21BEBD390065563C /* Debug */,
+				2B73E04F21BEBD390065563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73E05021BEBD390065563C /* Build configuration list for PBXNativeTarget "Voice-ChangingBowtieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73E05121BEBD390065563C /* Debug */,
+				2B73E05221BEBD390065563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B73E01A21BEBD360065563C /* Project object */;
+}
