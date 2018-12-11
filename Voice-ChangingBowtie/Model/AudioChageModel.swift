@@ -10,5 +10,5 @@ import Foundation
 import AVFoundation
 
 final class AudioChangeModel {
-    init{}
+    init() {}
 }
