@@ -28,14 +28,14 @@
                                 <rect key="frame" x="525" y="100" width="143" height="154"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ1-Cf-b6w"/>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DST-XT-JPW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M93-Zv-UYB">
                                 <rect key="frame" x="144" y="100" width="150" height="154"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AU7-a8-N3d"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXz-eV-ZmQ"/>
                                 </connections>
                             </button>
                         </subviews>
