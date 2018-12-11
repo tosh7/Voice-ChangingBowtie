@@ -14,14 +14,14 @@ final class ViewController: UIViewController {
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer!
     var isRecording = false
-    var isPlaying = true
-
+    var isPlaying = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpAudioRecorder()
     }
-
+    
     @IBAction func record(_ sender: Any) {
         if !isRecording {
             isRecording = true
@@ -33,24 +33,53 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func play(_ sender: Any) {
+        if !isPlaying {
+            isPlaying = true
+            playSound()
+        } else {
+            isPlaying = false
+            audioPlayer.stop()
+        }
     }
 }
 
 extension ViewController: AVAudioRecorderDelegate {
     func setUpAudioRecorder() {
         let session = AVAudioSession.sharedInstance()
-        try! session.setCategory(.playAndRecord, mode: .default)
-        try! session.setActive(true)
         
-        let settings = [
-            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 44100,
-            AVNumberOfChannelsKey: 2,
-            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-        ]
+        do {
+            try session.setCategory(.playAndRecord, mode: .default)
+            try session.setActive(true)
+            
+            let settings = [
+                AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+                AVSampleRateKey: 44100,
+                AVNumberOfChannelsKey: 2,
+                AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+            ]
+            
+            audioRecorder = try AVAudioRecorder(url: getAudioFilrUrl(), settings: settings)
+            audioRecorder.delegate = self
+        } catch let error {
+            print(error)
+        }
+    }
+}
+
+extension ViewController: AVAudioPlayerDelegate {
+    func playSound() {
+        let url = getAudioFilrUrl()
         
-        audioRecorder = try! AVAudioRecorder(url: getAudioFilrUrl(), settings: settings)
-        audioRecorder.delegate = self
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            audioPlayer = sound
+            
+            audioPlayer.delegate = self
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        } catch let error {
+            print(error)
+        }
     }
 }
 
