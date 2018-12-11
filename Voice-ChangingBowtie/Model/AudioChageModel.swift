@@ -6,9 +6,21 @@
 //  Copyright © 2018 Satoshi Komatsu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import AVFoundation
 
 final class AudioChangeModel {
-    init() {}
+    
+    var audioRecorder: AVAudioRecorder!
+    var audioPlayer: AVAudioPlayer!
+    
+//    init() {}
+    
+}
+
+extension AudioChangeModel: AVAudioRecorderDelegate {
+    
+    func setUpAudioRecorder() {
+        let session
+    }
 }
