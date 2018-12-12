@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6F8FB921C0A8070093A1E5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6F8FB821C0A8070093A1E5 /* UIColorExtension.swift */; };
 		2B73E02621BEBD360065563C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E02521BEBD360065563C /* AppDelegate.swift */; };
 		2B73E02821BEBD360065563C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73E02721BEBD360065563C /* ViewController.swift */; };
 		2B73E02B21BEBD360065563C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73E02921BEBD360065563C /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B6F8FB821C0A8070093A1E5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2B73E02221BEBD360065563C /* Voice-ChangingBowtie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice-ChangingBowtie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B73E02521BEBD360065563C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B73E02721BEBD360065563C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B6F8FB721C0A7F00093A1E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B6F8FB821C0A8070093A1E5 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2B73E01921BEBD360065563C = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +109,8 @@
 		2B73E02421BEBD360065563C /* Voice-ChangingBowtie */ = {
 			isa = PBXGroup;
 			children = (
-				2B73E05521BEBE2F0065563C /* ViewController */,
+				2B6F8FB721C0A7F00093A1E5 /* Extension */,
+				2B73E05521BEBE2F0065563C /* Controller */,
 				2B73E05421BEBE270065563C /* Model */,
 				2B73E05321BEBE190065563C /* View */,
 				2B73E02521BEBD360065563C /* AppDelegate.swift */,
@@ -144,12 +155,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2B73E05521BEBE2F0065563C /* ViewController */ = {
+		2B73E05521BEBE2F0065563C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				2B73E02721BEBD360065563C /* ViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				2B73E02821BEBD360065563C /* ViewController.swift in Sources */,
 				2B73E05721BEC4590065563C /* Audio.swift in Sources */,
 				2B73E02621BEBD360065563C /* AppDelegate.swift in Sources */,
+				2B6F8FB921C0A8070093A1E5 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
