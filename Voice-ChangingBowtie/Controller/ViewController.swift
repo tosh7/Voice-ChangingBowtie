@@ -18,7 +18,7 @@ final class ViewController: UIViewController {
             speedSlider.minimumValue = 0.5
             speedSlider.maximumValue = 1.5
             speedSlider.setValue(1, animated: true)
-            speedSlider.tintColor = UIColor.lightBlue
+            speedSlider.tintColor = .lightBlue
         }
     }
     @IBOutlet weak var pitchSlider: UISlider! {
@@ -26,21 +26,32 @@ final class ViewController: UIViewController {
             pitchSlider.minimumValue = -1000
             pitchSlider.maximumValue = 1000
             pitchSlider.setValue(0, animated: true)
-            pitchSlider.tintColor = UIColor.lightBlue
+            pitchSlider.tintColor = .lightBlue
         }
     }
     @IBOutlet weak var echoSwitch: UISwitch! {
         didSet {
             echoSwitch.isOn = false
-            echoSwitch.onTintColor = UIColor.lightBlue
-            echoSwitch.tintColor = UIColor.lightBlue
+            echoSwitch.onTintColor = .lightBlue
+            echoSwitch.tintColor = .lightBlue
         }
     }
     @IBOutlet weak var reverbSwitch: UISwitch! {
         didSet {
             reverbSwitch.isOn = false
-            reverbSwitch.onTintColor = UIColor.lightBlue
-            reverbSwitch.tintColor = UIColor.lightBlue
+            reverbSwitch.onTintColor = .lightBlue
+            reverbSwitch.tintColor = .lightBlue
+        }
+    }
+    @IBOutlet weak var recordButton: UIButton! {
+        didSet {
+            recordButton.tintColor = .lightBlue
+        }
+    }
+    @IBOutlet weak var playButton: UIButton! {
+        didSet {
+            playButton.tintColor = .lightBlue
+            playButton.isEnabled = false
         }
     }
     
@@ -55,6 +66,7 @@ final class ViewController: UIViewController {
             audio.audioRecorder.record()
         } else {
             audio.audioRecorder.stop()
+            playButton.isEnabled = true
         }
     }
     

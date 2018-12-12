@@ -12,15 +12,10 @@ import AVFoundation
 final class Audio {
     
     var audioRecorder: AVAudioRecorder!
-    var audioPlayer: AVAudioPlayer! //今はこれで実装しているけど、後々、AVAudioEngineに変更する
-    
     var audioEngine: AVAudioEngine!
     var audioFile: AVAudioFile!
     var audioPlayerNode: AVAudioPlayerNode!
     var audioUnitTimePitch: AVAudioUnitTimePitch!
-    var audioUnitVarispeed: AVAudioUnitVarispeed!
-    var audioUnitDelay: AVAudioUnitDelay!
-    var audioUnitDistortion: AVAudioUnitDistortion!
     
     init() {}
     
@@ -45,42 +40,6 @@ final class Audio {
         }
     }
     
-    func setUpAudioPlayer() {
-        let url = getAudioFilrUrl()
-        
-        do {
-            let sound = try AVAudioPlayer(contentsOf: url)
-            audioPlayer = sound
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.prepareToPlay()
-        } catch let error {
-            print(error)
-        }
-    }
-    
-    func setUpAudioEngine() {
-        audioEngine = AVAudioEngine()
-        
-        let url = getAudioFilrUrl()
-        
-        do {
-            audioFile = try AVAudioFile(forReading: url)
-            
-            audioPlayerNode = AVAudioPlayerNode()
-            audioEngine.attach(audioPlayerNode)
-            
-            audioUnitTimePitch = AVAudioUnitTimePitch()
-            audioUnitTimePitch.rate = 1
-            audioEngine.attach(audioUnitTimePitch)
-            
-            audioEngine.connect(audioPlayerNode, to: audioUnitTimePitch, format: audioFile.processingFormat)
-            
-            audioEngine.prepare()
-        } catch let error {
-            print(error)
-        }
-    }
-    
     func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
         audioEngine = AVAudioEngine()
         
@@ -97,7 +56,24 @@ final class Audio {
             audioUnitTimePitch.pitch = pitch
             audioEngine.attach(audioUnitTimePitch)
             
-            connectAudioNodes(audioPlayerNode, audioUnitTimePitch, audioEngine.outputNode)
+            let echoNode = AVAudioUnitDistortion()
+            echoNode.loadFactoryPreset(.multiEcho1)
+            audioEngine.attach(echoNode)
+            
+            let reverbNode = AVAudioUnitReverb()
+            reverbNode.loadFactoryPreset(.cathedral)
+            reverbNode.wetDryMix = 50
+            audioEngine.attach(reverbNode)
+            
+            if echo && reverb {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, echoNode, reverbNode, audioEngine.outputNode)
+            } else if echo {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, echoNode, audioEngine.outputNode)
+            } else if reverb {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, reverbNode, audioEngine.outputNode)
+            } else {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, audioEngine.outputNode)
+            }
             
             audioPlayerNode.stop()
             audioPlayerNode.scheduleFile(audioFile, at: nil)
@@ -109,8 +85,8 @@ final class Audio {
         }
     }
     
-    func connectAudioNodes(_ nodes: AVAudioNode...) {
-        for x in 0..<nodes.count-1 {
+    private func connectAudioNodes(_ nodes: AVAudioNode...) {
+        for x in 0..<nodes.count - 1 {
             audioEngine.connect(nodes[x], to: nodes[x+1], format: audioFile.processingFormat)
         }
     }
