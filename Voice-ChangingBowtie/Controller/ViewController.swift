@@ -15,8 +15,8 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var speedSlider: UISlider! {
         didSet {
-            speedSlider.minimumValue = 0
-            speedSlider.maximumValue = 2
+            speedSlider.minimumValue = 0.5
+            speedSlider.maximumValue = 1.5
             speedSlider.setValue(1, animated: true)
             speedSlider.tintColor = UIColor.lightBlue
         }
@@ -55,19 +55,14 @@ final class ViewController: UIViewController {
             audio.audioRecorder.record()
         } else {
             audio.audioRecorder.stop()
-            audio.setUpAudioPlayer()
         }
     }
     
     @IBAction func play(_ sender: Any) {
-        if !audio.audioPlayer.isPlaying {
-            audio.playSound(speed: speedSlider.value,
-                            pitch: pitchSlider.value,
-                            echo: echoSwitch.isOn,
-                            reverb: reverbSwitch.isOn)
-        } else {
-            audio.audioPlayer.stop()
-            audio.audioPlayer.currentTime = 0
-        }
+        audio.playSound(speed: speedSlider.value,
+                        pitch: pitchSlider.value,
+                        echo: echoSwitch.isOn,
+                        reverb: reverbSwitch.isOn
+        )
     }
 }
