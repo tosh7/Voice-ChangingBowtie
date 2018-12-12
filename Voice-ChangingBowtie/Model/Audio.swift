@@ -12,9 +12,10 @@ import AVFoundation
 final class Audio {
     
     var audioRecorder: AVAudioRecorder!
-    var audioPlayer: AVAudioPlayer!
     var audioEngine: AVAudioEngine!
+    var audioFile: AVAudioFile!
     var audioPlayerNode: AVAudioPlayerNode!
+    var audioUnitTimePitch: AVAudioUnitTimePitch!
     
     init() {}
     
@@ -39,21 +40,55 @@ final class Audio {
         }
     }
     
-    func setUpAudioPlayer() {
+    func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
+        audioEngine = AVAudioEngine()
+        
         let url = getAudioFilrUrl()
         
         do {
-            let sound = try AVAudioPlayer(contentsOf: url)
-            audioPlayer = sound
-            audioPlayer.delegate = self as? AVAudioPlayerDelegate
-            audioPlayer.prepareToPlay()
+            audioFile = try AVAudioFile(forReading: url)
+            
+            audioPlayerNode = AVAudioPlayerNode()
+            audioEngine.attach(audioPlayerNode)
+            
+            audioUnitTimePitch = AVAudioUnitTimePitch()
+            audioUnitTimePitch.rate = speed
+            audioUnitTimePitch.pitch = pitch
+            audioEngine.attach(audioUnitTimePitch)
+            
+            let echoNode = AVAudioUnitDistortion()
+            echoNode.loadFactoryPreset(.multiEcho1)
+            audioEngine.attach(echoNode)
+            
+            let reverbNode = AVAudioUnitReverb()
+            reverbNode.loadFactoryPreset(.cathedral)
+            reverbNode.wetDryMix = 50
+            audioEngine.attach(reverbNode)
+            
+            if echo && reverb {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, echoNode, reverbNode, audioEngine.outputNode)
+            } else if echo {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, echoNode, audioEngine.outputNode)
+            } else if reverb {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, reverbNode, audioEngine.outputNode)
+            } else {
+                connectAudioNodes(audioPlayerNode, audioUnitTimePitch, audioEngine.outputNode)
+            }
+            
+            audioPlayerNode.stop()
+            audioPlayerNode.scheduleFile(audioFile, at: nil)
+            
+            try audioEngine.start()
+            audioPlayerNode.play()
         } catch let error {
             print(error)
         }
     }
     
-    func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
-        audioPlayer.play()
+    private func connectAudioNodes(_ nodes: AVAudioNode...) {
+        for x in 0..<nodes.count - 1 {
+            audioEngine.connect(nodes[x], to: nodes[x+1], format: audioFile.processingFormat)
+        }
     }
     
     private func getAudioFilrUrl() -> URL {

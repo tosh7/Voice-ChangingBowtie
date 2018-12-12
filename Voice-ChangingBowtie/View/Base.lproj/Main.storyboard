@@ -47,11 +47,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="AQD-W1-hQ5">
-                                <rect key="frame" x="138" y="100" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1000" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="tZ4-wc-fw8">
-                                <rect key="frame" x="138" y="152" width="118" height="30"/>
+                                <rect key="frame" x="109" y="100" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-6S-9E5">
@@ -90,6 +86,10 @@
                                 <rect key="frame" x="136" y="228" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1000" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="tZ4-wc-fw8">
+                                <rect key="frame" x="109" y="152" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -109,6 +109,8 @@
                     <connections>
                         <outlet property="echoSwitch" destination="3bS-02-coV" id="yZO-uq-0Ct"/>
                         <outlet property="pitchSlider" destination="tZ4-wc-fw8" id="y0S-tc-8lV"/>
+                        <outlet property="playButton" destination="M93-Zv-UYB" id="jd6-kX-tJZ"/>
+                        <outlet property="recordButton" destination="g3I-rt-Six" id="EK0-RH-Opk"/>
                         <outlet property="reverbSwitch" destination="yzM-kg-yoW" id="cQv-pk-V33"/>
                         <outlet property="speedSlider" destination="AQD-W1-hQ5" id="KIE-tl-WIU"/>
                     </connections>
