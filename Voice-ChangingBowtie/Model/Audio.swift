@@ -13,6 +13,8 @@ final class Audio {
     
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer!
+    var audioEngine: AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
     
     init() {}
     
@@ -37,19 +39,21 @@ final class Audio {
         }
     }
     
-    func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
+    func setUpAudioPlayer() {
         let url = getAudioFilrUrl()
         
         do {
             let sound = try AVAudioPlayer(contentsOf: url)
             audioPlayer = sound
-            
             audioPlayer.delegate = self as? AVAudioPlayerDelegate
             audioPlayer.prepareToPlay()
-            audioPlayer.play()
         } catch let error {
             print(error)
         }
+    }
+    
+    func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
+        audioPlayer.play()
     }
     
     private func getAudioFilrUrl() -> URL {

@@ -35,8 +35,9 @@
                                     <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DST-XT-JPW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M93-Zv-UYB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M93-Zv-UYB">
                                 <rect key="frame" x="596" y="189" width="75" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="0.9192116857" green="0.0" blue="0.017209216360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -94,7 +95,6 @@
                         <constraints>
                             <constraint firstItem="ucO-Qp-jT6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0aq-aK-Unc"/>
                             <constraint firstItem="nb2-18-hbT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2w1-Uh-05h"/>
-                            <constraint firstItem="M93-Zv-UYB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7ib-La-2jk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ucO-Qp-jT6" secondAttribute="bottom" constant="30" id="87T-rC-HUu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ucO-Qp-jT6" secondAttribute="trailing" constant="50" id="G2w-Pk-m4i"/>
                             <constraint firstItem="ucO-Qp-jT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4v-oS-bXg"/>
