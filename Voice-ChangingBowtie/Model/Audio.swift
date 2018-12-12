@@ -37,7 +37,7 @@ final class Audio {
         }
     }
     
-    func playSound() {
+    func playSound(speed: Float, pitch: Float, echo: Bool, reverb: Bool) {
         let url = getAudioFilrUrl()
         
         do {
