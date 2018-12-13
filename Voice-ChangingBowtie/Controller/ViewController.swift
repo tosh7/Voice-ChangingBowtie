@@ -45,12 +45,12 @@ final class ViewController: UIViewController {
     }
     @IBOutlet weak var recordButton: UIButton! {
         didSet {
-            recordButton.tintColor = .lightBlue
+            recordButton.layer.cornerRadius = recordButton.layer.bounds.height / 2
         }
     }
     @IBOutlet weak var playButton: UIButton! {
         didSet {
-            playButton.tintColor = .lightBlue
+            playButton.layer.cornerRadius = playButton.layer.bounds.height / 2
             playButton.isEnabled = false
         }
     }
